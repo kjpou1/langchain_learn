@@ -21,3 +21,24 @@ In this example, we demonstrate how to build a simple chatbot using LangChain wi
     streamlit run chatbot/localama.py
 ```    
         
+## FastAPI + LangServe Integration
+
+[Video Link](https://www.youtube.com/watch?v=XWB5DXP-DO8&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=6)
+Use FastAPI for serving LangChain-based LLM endpoints, allowing your front-end (or other services) to invoke specific prompts/models via REST APIs.
+
+
+### Command Lines to Run the App and Client
+
+1. **Start the FastAPI Server**
+   ```bash
+   cd API
+   python app.py
+   ```
+   - Server will listen on port `8000` by default.  
+   - Swagger docs available at: `http://127.0.0.1:8000/docs`
+
+2. **Run the Client (Streamlit App)**
+   ```bash
+   streamlit run client.py
+   ```
+   - This front-end will call the FastAPI routes, showcasing how to consume the LLM endpoints in your UI.  
