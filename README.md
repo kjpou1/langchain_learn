@@ -20,7 +20,9 @@ In this example, we demonstrate how to build a simple chatbot using LangChain wi
 ```bash
     streamlit run chatbot/localama.py
 ```    
-        
+ 
+---
+       
 ## FastAPI + LangServe Integration
 
 [Video Link](https://www.youtube.com/watch?v=XWB5DXP-DO8&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=6)
@@ -42,3 +44,37 @@ Use FastAPI for serving LangChain-based LLM endpoints, allowing your front-end (
    streamlit run client.py
    ```
    - This front-end will call the FastAPI routes, showcasing how to consume the LLM endpoints in your UI.  
+
+
+---
+
+
+## RAG Pipeline
+
+
+[Video Link](https://www.youtube.com/watch?v=9Thc6hRw2Gs&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=9)
+
+### Project Overview
+
+This project demonstrates how to build a **Retrieval-Augmented Generation (RAG) pipeline** using [LangChain](https://github.com/hwchase17/langchain) and popular vector databases such as **ChromaDB** and **FAISS**. It walks you through:
+
+1. **Data Ingestion**  
+   - Loading various file formats (PDF, text, web pages) using LangChain’s document loaders.
+
+2. **Text Splitting (Transform)**  
+   - Breaking larger documents into manageable chunks that fit LLM context windows.
+
+3. **Embedding**  
+   - Converting text chunks into vector representations (e.g., using OpenAI Embeddings or Ollama).
+
+4. **Vector Store**  
+   - Storing embeddings in a specialized database (ChromaDB, FAISS) for efficient similarity search.
+
+5. **Query & Retrieval**  
+   - Executing similarity searches to find the most relevant text chunks for a given user query.
+
+By the end, you’ll have a working RAG pipeline that retrieves domain-specific context from your own documents, enriching LLM responses with accurate and up-to-date information. This approach is essential for building scalable, knowledge-intensive AI applications like specialized chatbots, search engines, or custom Q&A systems.
+
+
+---
+
