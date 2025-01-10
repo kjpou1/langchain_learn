@@ -84,6 +84,8 @@ This notebook focuses on building an advanced Retriever and Chain implementation
 
 ## Advanced Retriever and Chain with LangChain
 
+[Video Link](https://www.youtube.com/watch?v=tIwi92nkcu0&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=10)
+
 This notebook demonstrates the construction of a Retrieval-Augmented Generation (RAG) pipeline that integrates LangChain's Retriever and Chain components with OpenAI and Ollama LLMs for advanced Q&A functionalities.
 
 ### Key Features:
